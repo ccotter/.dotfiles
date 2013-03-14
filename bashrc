@@ -10,3 +10,4 @@ export PAGER=less
 bind 'set match-hidden-files off'
 
 . ~/.dotfiles/complete/git-completion.bash
+. ~/.dotfiles/complete/svn-completion.bash
