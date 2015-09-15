@@ -2,7 +2,8 @@ alias grep="grep --exclude-dir=\".svn\" -I"
 alias grepi=`which grep`
 set -o vi
 alias ls="ls -G"
-export PS1="\\W$ "
+#export PS1="\\W$ "
+export PS1"=[\u@\h \W]\$ "
 export HISTSIZE=10000
 export EDITOR=vim
 export PAGER=less
@@ -10,4 +11,5 @@ export PAGER=less
 bind 'set match-hidden-files off'
 
 . ~/.dotfiles/complete/git-completion.bash
-#. ~/.dotfiles/complete/svn-completion.bash
+
+alias gits='git status'
